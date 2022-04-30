@@ -4,7 +4,7 @@ Munin monitoring server for RedHat/CentOS or Debian/Ubuntu.
 
 |GitHub|GitLab|Quality|Downloads|Version|Issues|Pull Requests|
 |------|------|-------|---------|-------|------|-------------|
-|[![github](https://github.com/buluma/ansible-role-munin/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/ansible-role-munin/actions)|[![gitlab](https://gitlab.com/buluma/ansible-role-munin/badges/master/pipeline.svg)](https://gitlab.com/buluma/ansible-role-munin)|[![quality](https://img.shields.io/ansible/quality/)](https://galaxy.ansible.com/buluma/munin)|[![downloads](https://img.shields.io/ansible/role/d/)](https://galaxy.ansible.com/buluma/munin)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-munin.svg)](https://github.com/buluma/ansible-role-munin/releases/)|[![Issues](https://img.shields.io/github/issues/buluma/ansible-role-munin.svg)](https://github.com/buluma/ansible-role-munin/issues/)|[![PullRequests](https://img.shields.io/github/issues-pr-closed-raw/buluma/ansible-role-munin.svg)](https://github.com/buluma/ansible-role-munin/pulls/)|
+|[![github](https://github.com/buluma/ansible-role-munin/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/ansible-role-munin/actions)|[![gitlab](https://gitlab.com/buluma/ansible-role-munin/badges/master/pipeline.svg)](https://gitlab.com/buluma/ansible-role-munin)|[![quality](https://img.shields.io/ansible/quality/59032)](https://galaxy.ansible.com/buluma/munin)|[![downloads](https://img.shields.io/ansible/role/d/59032)](https://galaxy.ansible.com/buluma/munin)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-munin.svg)](https://github.com/buluma/ansible-role-munin/releases/)|[![Issues](https://img.shields.io/github/issues/buluma/ansible-role-munin.svg)](https://github.com/buluma/ansible-role-munin/issues/)|[![PullRequests](https://img.shields.io/github/issues-pr-closed-raw/buluma/ansible-role-munin.svg)](https://github.com/buluma/ansible-role-munin/pulls/)|
 
 ## [Example Playbook](#example-playbook)
 
@@ -79,6 +79,13 @@ munin_alerts: []
 
 - pip packages listed in [requirements.txt](https://github.com/buluma/ansible-role-munin/blob/main/requirements.txt).
 
+## [Status of used roles](#status-of-requirements)
+
+The following roles are used to prepare a system. You can prepare your system in another way.
+
+| Requirement | GitHub | GitLab |
+|-------------|--------|--------|
+|[buluma.bootstrap](https://galaxy.ansible.com/buluma/bootstrap)|[![Build Status GitHub](https://github.com/buluma/ansible-role-bootstrap/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/ansible-role-bootstrap/actions)|[![Build Status GitLab ](https://gitlab.com/buluma/ansible-role-bootstrap/badges/main/pipeline.svg)](https://gitlab.com/buluma/ansible-role-bootstrap)|
 
 ## [Context](#context)
 
@@ -98,7 +105,7 @@ This role has been tested on these [container images](https://hub.docker.com/u/b
 |debian|all|
 |ubuntu|all|
 
-The minimum version of Ansible required is 2.4, tests have been done to:
+The minimum version of Ansible required is 2.1, tests have been done to:
 
 - The previous version.
 - The current version.
@@ -114,7 +121,7 @@ If you find issues, please register them in [GitHub](https://github.com/buluma/a
 
 ## [License](#license)
 
-license (BSD, MIT)
+license (Apache-2.0)
 
 ## [Author Information](#author-information)
 
