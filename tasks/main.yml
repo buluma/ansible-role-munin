@@ -43,6 +43,7 @@
     password: "{{ munin_admin_password }}"
     path: /etc/munin/munin-htpasswd
     state: present
+    mode: 0755
 
 - name: enable or disable the munin cron job.
   lineinfile:
