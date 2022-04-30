@@ -1,0 +1,15 @@
+---
+#
+# Ansible managed
+#
+exclude_list:
+  - ./molecule/default/collections.yml
+  - ./.tox
+  - ./.cache
+
+skip_list:
+  - 'yaml'
+  - 'role-name'
+
+warn_list:  # or 'skip_list' to silence them completely
+  - internal-error  # Unexpected internal error.
