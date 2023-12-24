@@ -1,10 +1,10 @@
-# [Ansible role munin](#munin)
+# Ansible role [munin](https://galaxy.ansible.com/ui/standalone/roles/buluma/munin/documentation)
 
 Munin monitoring server for RedHat/CentOS or Debian/Ubuntu.
 
-|GitHub|GitLab|Downloads|Version|Issues|Pull Requests|
-|------|------|-------|-------|------|-------------|
-|[![github](https://github.com/buluma/ansible-role-munin/actions/workflows/molecule.yml/badge.svg)](https://github.com/buluma/ansible-role-munin/actions/workflows/molecule.yml)|[![gitlab](https://gitlab.com/shadowwalker/ansible-role-munin/badges/master/pipeline.svg)](https://gitlab.com/shadowwalker/ansible-role-munin)|[![downloads](https://img.shields.io/ansible/role/d/4773)](https://galaxy.ansible.com/buluma/munin)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-munin.svg)](https://github.com/buluma/ansible-role-munin/releases/)|[![Issues](https://img.shields.io/github/issues/buluma/ansible-role-munin.svg)](https://github.com/buluma/ansible-role-munin/issues/)|[![PullRequests](https://img.shields.io/github/issues-pr-closed-raw/buluma/ansible-role-munin.svg)](https://github.com/buluma/ansible-role-munin/pulls/)|
+|GitHub|Version|Issues|Pull Requests|Downloads|
+|------|-------|------|-------------|---------|
+|[![github](https://github.com/buluma/ansible-role-munin/actions/workflows/molecule.yml/badge.svg)](https://github.com/buluma/ansible-role-munin/actions/workflows/molecule.yml)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-munin.svg)](https://github.com/buluma/ansible-role-munin/releases/)|[![Issues](https://img.shields.io/github/issues/buluma/ansible-role-munin.svg)](https://github.com/buluma/ansible-role-munin/issues/)|[![PullRequests](https://img.shields.io/github/issues-pr-closed-raw/buluma/ansible-role-munin.svg)](https://github.com/buluma/ansible-role-munin/pulls/)|[![Ansible Role](https://img.shields.io/ansible/role/d/buluma/munin)](https://galaxy.ansible.com/ui/standalone/roles/buluma/munin/documentation)|
 
 ## [Example Playbook](#example-playbook)
 
@@ -88,10 +88,10 @@ munin_alerts: []
 
 The following roles are used to prepare a system. You can prepare your system in another way.
 
-| Requirement | GitHub | GitLab |
+| Requirement | GitHub | Version |
 |-------------|--------|--------|
-|[buluma.bootstrap](https://galaxy.ansible.com/buluma/bootstrap)|[![Build Status GitHub](https://github.com/buluma/ansible-role-bootstrap/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/ansible-role-bootstrap/actions)|[![Build Status GitLab](https://gitlab.com/shadowwalker/ansible-role-bootstrap/badges/master/pipeline.svg)](https://gitlab.com/shadowwalker/ansible-role-bootstrap)|
-|[buluma.repo_epel](https://galaxy.ansible.com/buluma/repo_epel)|[![Build Status GitHub](https://github.com/buluma/ansible-role-repo_epel/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/ansible-role-repo_epel/actions)|[![Build Status GitLab](https://gitlab.com/shadowwalker/ansible-role-repo_epel/badges/master/pipeline.svg)](https://gitlab.com/shadowwalker/ansible-role-repo_epel)|
+|[buluma.bootstrap](https://galaxy.ansible.com/buluma/bootstrap)|[![Ansible Molecule](https://github.com/buluma/ansible-role-bootstrap/actions/workflows/molecule.yml/badge.svg)](https://github.com/buluma/ansible-role-bootstrap/actions/workflows/molecule.yml)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-bootstrap.svg)](https://github.com/shadowwalker/ansible-role-bootstrap)|
+|[buluma.repo_epel](https://galaxy.ansible.com/buluma/repo_epel)|[![Ansible Molecule](https://github.com/buluma/ansible-role-repo_epel/actions/workflows/molecule.yml/badge.svg)](https://github.com/buluma/ansible-role-repo_epel/actions/workflows/molecule.yml)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-repo_epel.svg)](https://github.com/shadowwalker/ansible-role-repo_epel)|
 
 ## [Context](#context)
 
@@ -125,14 +125,11 @@ If you find issues, please register them in [GitHub](https://github.com/buluma/a
 
 ## [License](#license)
 
-[Apache-2.0](https://github.com/buluma/ansible-role-munin/blob/master/LICENSE).
+[Apache-2.0](https://github.com/buluma/ansible-role-munin/blob/master/LICENSE)
 
 ## [Author Information](#author-information)
 
-[Michael Buluma](https://buluma.github.io/)
+[Shadow Walker](https://buluma.github.io/)
 
-Please consider [sponsoring me](https://github.com/sponsors/buluma).
-
-### [Special Thanks](#special-thanks)
 
 Template inspired by [Robert de Bock](https://github.com/robertdebock)
