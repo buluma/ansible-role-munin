@@ -1,14 +1,12 @@
 ---
-dependencies: []
 
 galaxy_info:
   role_name: munin
-  author: Michael Buluma
-  namespace: buluma
+  author: buluma
   description: Munin monitoring server for RedHat/CentOS or Debian/Ubuntu.
   company: ShadowNet
   license: Apache-2.0
-  min_ansible_version: 2.10
+  min_ansible_version: "2.12"
   platforms:
     - name: EL
       versions:
@@ -23,3 +21,4 @@ galaxy_info:
     - monitoring
     - system
     - munin
+dependencies: []
