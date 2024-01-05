@@ -21,8 +21,8 @@
        state=present
   with_items:
     - perl
-    - perl-devel
-    - perl-CPAN
+    # - perl-devel
+    # - perl-CPAN
 
 - name: Gather required munin packages
   ansible.builtin.set_fact:
