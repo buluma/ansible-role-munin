@@ -16,13 +16,11 @@
     - "{{ ansible_os_family }}-{{ ansible_distribution_major_version }}.yml"
     - "{{ ansible_os_family }}.yml"
 
-- name: Install cpan and perl-devel
+- name: Install perl
   ansible.builtin.package: name={{ item }}
        state=present
   with_items:
     - perl
-    # - perl-devel
-    # - perl-CPAN
 
 - name: Gather required munin packages
   ansible.builtin.set_fact:
