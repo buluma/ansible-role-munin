@@ -1,6 +1,7 @@
 ---
 munin_default_packages:
   - python-passlib
+  - perl
   - rrdtool
   - munin
 

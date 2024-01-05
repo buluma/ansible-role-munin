@@ -1,6 +1,8 @@
 ---
 munin_default_packages:
   - python3-passlib
+  - perl
+  - rrdtool
   - munin
 
 munin_conf_d_directory: /etc/munin/conf.d
