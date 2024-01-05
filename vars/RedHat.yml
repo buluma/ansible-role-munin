@@ -1,6 +1,7 @@
 ---
 munin_default_packages:
   - python-passlib
+  - rrdtool
   - munin
 
 munin_conf_d_directory: /etc/munin/conf.d

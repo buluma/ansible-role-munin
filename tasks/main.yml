@@ -1,29 +1,29 @@
 ---
-- name: update apt cache.
+- name: Update apt cache.
   ansible.builtin.apt: update_cache=true cache_valid_time=600
   when: ansible_os_family == 'Debian'
 
-- name: override munin_packages on Ubuntu.
+- name: Override munin_packages on Ubuntu.
   ansible.builtin.set_fact:
     munin_packages:
       - python3-passlib
       - munin
   when: ansible_os_family == 'Debian'
 
-- name: include os-specific variables.
+- name: Include os-specific variables.
   ansible.builtin.include_vars: "{{ item }}"
   with_first_found:
     - "{{ ansible_os_family }}-{{ ansible_distribution_major_version }}.yml"
     - "{{ ansible_os_family }}.yml"
 
-- name: gather required munin packages
+- name: Gather required munin packages
   ansible.builtin.set_fact:
     munin_required_packages: "{{ munin_packages | default(munin_default_packages) }}"
 
-- name: install required packages for munin.
+- name: Install required packages for munin.
   ansible.builtin.package: "name={{ munin_required_packages }} state=present"
 
-- name: copy munin configurations.
+- name: Copy munin configurations.
   ansible.builtin.template:
     src: "{{ item.src }}"
     dest: "{{ item.dest }}"
@@ -36,7 +36,7 @@
     - src: hosts.conf.j2
       dest: "{{ munin_conf_d_directory }}/hosts.conf"
 
-- name: create munin user via htpasswd.
+- name: Create munin user via htpasswd.
   community.general.htpasswd:
     create: true
     name: "{{ munin_admin_user }}"
@@ -45,7 +45,7 @@
     state: present
     mode: 0755
 
-- name: enable or disable the munin cron job.
+- name: Enable or disable the munin cron job.
   ansible.builtin.lineinfile:
     dest: /etc/cron.d/munin
     state: "{{ munin_cron_job }}"
