@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.1.3](https://github.com/buluma/ansible-role-munin/tree/0.1.3) (2024-01-05)
+
+[Full Changelog](https://github.com/buluma/ansible-role-munin/compare/0.1.2...0.1.3)
+
 ## [0.1.2](https://github.com/buluma/ansible-role-munin/tree/0.1.2) (2022-04-30)
 
 [Full Changelog](https://github.com/buluma/ansible-role-munin/compare/0.1.1...0.1.2)
