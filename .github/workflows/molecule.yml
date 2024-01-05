@@ -69,3 +69,13 @@ jobs:
         with:
           image: ${{ matrix.config.image }}
           tag: ${{ matrix.config.tag }}
+  test-all:
+    if: ${{ always() }}
+    name: Test (matrix)
+    runs-on: ubuntu-20.04
+    needs:
+      - lint
+      - test
+    steps:
+      - name: Check test matrix status
+        run: "[[ '${{ needs.test.result }}' == 'success' ]] || exit 1"
