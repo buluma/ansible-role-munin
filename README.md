@@ -27,10 +27,11 @@ The machine needs to be prepared. In CI this is done using [`molecule/default/pr
 - name: Converge
   hosts: all
   become: true
+  gather_facts: no
 
   roles:
     - role: buluma.bootstrap
-    - role: buluma.repo_epel
+    # - role: buluma.repo_epel
 ```
 
 Also see a [full explanation and example](https://buluma.github.io/how-to-use-these-roles.html) on how to use these roles.
@@ -92,6 +93,7 @@ The following roles are used to prepare a system. You can prepare your system in
 |-------------|--------|--------|
 |[buluma.bootstrap](https://galaxy.ansible.com/buluma/bootstrap)|[![Ansible Molecule](https://github.com/buluma/ansible-role-bootstrap/actions/workflows/molecule.yml/badge.svg)](https://github.com/buluma/ansible-role-bootstrap/actions/workflows/molecule.yml)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-bootstrap.svg)](https://github.com/shadowwalker/ansible-role-bootstrap)|
 |[buluma.repo_epel](https://galaxy.ansible.com/buluma/repo_epel)|[![Ansible Molecule](https://github.com/buluma/ansible-role-repo_epel/actions/workflows/molecule.yml/badge.svg)](https://github.com/buluma/ansible-role-repo_epel/actions/workflows/molecule.yml)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-repo_epel.svg)](https://github.com/shadowwalker/ansible-role-repo_epel)|
+|[buluma.munin](https://galaxy.ansible.com/buluma/munin)|[![Ansible Molecule](https://github.com/buluma/ansible-role-munin/actions/workflows/molecule.yml/badge.svg)](https://github.com/buluma/ansible-role-munin/actions/workflows/molecule.yml)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-munin.svg)](https://github.com/shadowwalker/ansible-role-munin)|
 
 ## [Context](#context)
 
@@ -107,7 +109,6 @@ This role has been tested on these [container images](https://hub.docker.com/u/b
 
 |container|tags|
 |---------|----|
-|[EL](https://hub.docker.com/repository/docker/buluma/enterpriselinux/general)|all|
 |[Debian](https://hub.docker.com/repository/docker/buluma/debian/general)|all|
 |[Ubuntu](https://hub.docker.com/repository/docker/buluma/ubuntu/general)|all|
 
